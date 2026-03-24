@@ -31,7 +31,70 @@ header img{
     max-width: 150px;
 }
 
-main section{
+
+#nav_menu {
+    border-top: 3px solid tan;
+    border-bottom: 3px solid tan;
+    background-color: tan;
+}
+    #nav_menu ul {
+    list-style: none;
+    display: flex;
+}
+#nav_menu li {
+    width: 20%;
+}
+#nav_menu a {
+    text-align: center;
+    display: block;
+    padding: .7em 0;
+    background-color: tan;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+#nav_menu a:hover {
+    color: black;
+    background-color: rgb(253, 237, 217);
+}
+
+main {
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+}
+main section {
+    width: 75%;
     padding: 2em;
     line-height: 1.5;
+}
+main aside {
+    width: 25%;
+}
+main img {
+    padding-bottom: 1em;
+    max-width: 150px;
+}
+
+main p {
+    padding-bottom: .5em;
+}
+
+#aside_right, #aside_right p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(45deg, tan 0%, white 50%, tan 100%);
+    align-items: center;
+    padding: 1em;
+}
+footer img {
+    max-width: 50px;
 }

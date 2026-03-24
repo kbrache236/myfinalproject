@@ -17,6 +17,18 @@
                 <h3>Under Construction</h3>
             </div>
         </header>
+
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.html" class="current">Home</a></li>
+                <li><a href="pages/montana.html">Senior Care</a></li>
+                <li><a href="pages/koda.html">Anxiety</a></li>
+                <li><a href="pages/kenai.html">Diet</a></li>
+                <li><a href="pages/nevada.html">Puppy Care</a></li>
+
+            </ul>
+        </nav>
+
         <main>
             <section>
                 <h2>Proposal</h2>
@@ -28,12 +40,30 @@
                     <li>Nevada = the basics for raising a puppy</li>
                 </ul>
             </section>
-            <aside>
+            <aside id="aside_right">
+                <h2>Meet the Dogs</h2>
+                <p><a href="#"><img src="images/montana.jpeg" alt="Montana"></a>
+                <a href="#">Montana</a></p>
 
+                <p><a href="#"><img src="images/puppy_koda.jpeg" alt="Koda"></a>
+                <a href="#">Koda</a></p>
+
+                <p><a href="#"><img src="images/kenai.jpeg" alt="Kenai"></a>
+                <a href="#">Kenai</a></p>
+
+                <p><a href="#"><img src="images/puppy_nevi.jpeg" alt="Nevada"></a>
+                <a href="#">Nevada</a></p>
             </aside>
         </main>
         <footer>
-
+            <p>&copy; <span id = "copyrightyear"></span> Kiara Brache Productions</p>
+            <p><img src="images/paw_icon.png"></p>
         </footer>
     </body>
 </html>
+
+<script>
+window.onload = function () {
+    document.getElementById("copyrightyear").innerHTML = new Date().getFullYear();
+}
+</script>

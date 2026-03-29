@@ -1,69 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="shortcut icon" href="images/paw_icon.png" type="image/x-icon">
-        <link rel="stylesheet" href="styles/main.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Brache Dogs</title>
-    </head>
-    <body>
-        <header>
-            <img src="images/paw_icon.png" alt="Paw">
-            <div>
-                <h2>The Brache Dogs</h2>
-                <h3>Under Construction</h3>
-            </div>
-        </header>
+    <link rel="shortcut icon" href="images/paw_icon.png" type="image/x-icon">
 
-        <nav id="nav_menu">
-            <ul>
-                <li><a href="index.html" class="current">Home</a></li>
-                <li><a href="pages/montana.html">Senior Care</a></li>
-                <li><a href="pages/koda.html">Anxiety</a></li>
-                <li><a href="pages/kenai.html">Diet</a></li>
-                <li><a href="pages/nevada.html">Puppy Care</a></li>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+        });
+    </script>
 
-            </ul>
-        </nav>
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <link rel="stylesheet" href="styles/main.css">
 
-        <main>
-            <section>
-                <h2>Proposal</h2>
-                <p>For my final project, I'd like to make a website built around my dogs. Each page will feature one of my dogs, of which there are four, Montana, Koda, Kenai, and Nevada. For each dog I will showcase a differnt aspect of pet care.</p>
-                <ul>
-                    <li>Montana = how to take care of an elder dog / end of life care</li>
-                    <li>Koda = how to accomodate an anxious puppy</li>
-                    <li>Kenai = how to maintain a dog's diet and exercise (Kenai is unfortunated very "round")</li>
-                    <li>Nevada = the basics for raising a puppy</li>
-                </ul>
-            </section>
-            <aside id="aside_right">
-                <h2>Meet the Dogs</h2>
-                <p><a href="#"><img src="images/montana.jpeg" alt="Montana"></a>
-                <a href="#">Montana</a></p>
+    <title>Brache Dogs</title>
+</head>
 
-                <p><a href="#"><img src="images/puppy_koda.jpeg" alt="Koda"></a>
-                <a href="#">Koda</a></p>
+<body>
+    <header>
+        <img src="images/paw_icon.png" alt="Paw">
+        <div>
+            <h2>The Brache Dogs</h2>
+            <h3>Under Construction</h3>
+        </div>
+    </header>
 
-                <p><a href="#"><img src="images/kenai.jpeg" alt="Kenai"></a>
-                <a href="#">Kenai</a></p>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="pages/montana.html">Senior Care</a></li>
+            <li><a href="pages/koda.html">Anxiety</a></li>
+            <li><a href="pages/kenai.html">Diet</a></li>
+            <li><a href="pages/nevada.html">Puppy Care</a></li>
 
-                <p><a href="#"><img src="images/puppy_nevi.jpeg" alt="Nevada"></a>
-                <a href="#">Nevada</a></p>
-            </aside>
-        </main>
-        <footer>
-            <p>&copy; <span id = "copyrightyear"></span> Kiara Brache Productions</p>
-            <p><img src="images/paw_icon.png"></p>
-        </footer>
-    </body>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Welcome!</h2>
+            <p>Welcome to a comprehensive guide to responsible and compassionate dog care, presented through the lives of four beloved companions: Montana, Koda, Kenai, and Nevada. This website is designed to offer practical, experience-based insights into the diverse needs of dogs at different stages of life and with varying temperaments.</p>
+            <p>Each section of the site is dedicated to a specific aspect of canine care, illustrated through one dog’s unique story. Montana’s page focuses on the sensitive and often overlooked topic of caring for senior dogs, including comfort, health management, and end-of-life considerations. Koda’s section explores strategies for supporting an anxious puppy, emphasizing patience, environment, and behavioral understanding. Kenai’s profile addresses the importance of maintaining a healthy diet and regular exercise, highlighting the challenges and responsibilities of managing a dog’s weight. Finally, Nevada’s page provides a foundational guide to raising a puppy, covering essential early-care practices that set the stage for a healthy and well-adjusted life.</p>
+            <p>Together, these perspectives aim to educate, inform, and support dog owners in providing thoughtful, informed care for their pets. Whether you are a first-time owner or an experienced caretaker, this resource is intended to promote a deeper understanding of canine well-being across all stages of life.</p>
+        </section>
+        <aside id="aside_right">
+            <h2>Meet the Dogs</h2>
+            <p><a href="pages/montana.html"><img src="images/montana.jpeg" alt="Montana"></a>
+                <a href="pages/montana.html">Montana</a>
+            </p>
+
+            <p><a href="pages/koda.html"><img src="images/puppy_koda.jpeg" alt="Koda"></a>
+                <a href="pages/koda.html">Koda</a>
+            </p>
+
+            <p><a href="pages/kenai.html"><img src="images/kenai.jpeg" alt="Kenai"></a>
+                <a href="pages/kenai.html">Kenai</a>
+            </p>
+
+            <p><a href="pages/nevada.html"><img src="images/puppy_nevi.jpeg" alt="Nevada"></a>
+                <a href="pages/nevada.html">Nevada</a>
+            </p>
+        </aside>
+        <div>
+            <button id="cornerbtn" class="return-to-top" title="Return to Top" onclick="topFunction()"><img src="images/back-to-top-icon-png-7.jpg" alt="return to top icon"></button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyrightyear"></span> Kiara Brache Productions</p>
+        <p><img src="images/paw_icon.png"></p>
+    </footer>
+</body>
+
 </html>
 
-<script>
-window.onload = function () {
-    document.getElementById("copyrightyear").innerHTML = new Date().getFullYear();
-}
-</script>
+
+<script src="js/scripts.js"></script>

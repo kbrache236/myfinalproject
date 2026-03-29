@@ -59,42 +59,8 @@ header img{
 }
 
 main {
-    padding-left: 1em;
-    padding-right: 1em;
-    display: flex;
-}
-main section {
-    width: 75%;
-    padding: 2em;
-    line-height: 1.5;
-}
-main aside {
-    width: 25%;
-}
-main img {
-    padding-bottom: 1em;
-    max-width: 150px;
-}
-
-main p {
-    padding-bottom: .5em;
-}
-
-#aside_right, #aside_right p {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
     padding: 1em;
-}
-#aside_right a:hover {
-    color: tan;
-}
-#aside_right a:visited:hover {
-    color: tan;
-}
-#aside_right a:visited {
-    color: rgb(114, 85, 47);
+    display: flex;
 }
 
 .return-to-top {

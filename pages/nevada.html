@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nevada</title>
+
+    <link rel="shortcut icon" href="../images/paw_icon.png" type="image/x-icon">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+        });
+    </script>
+
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <link rel="stylesheet" href="../styles/kenai.css">
+
+    <title>Puppy Care</title>
 </head>
+
 <body>
-     <h2>Under Construction</h2>
+    <header>
+        <img src="../images/paw_icon.png" alt="Paw">
+        <div>
+            <h2>The Brache Dogs</h2>
+            <h3>Under Construction</h3>
+        </div>
+    </header>
+
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="../index.html" class="current">Home</a></li>
+            <li><a href="../pages/montana.html">Senior Care</a></li>
+            <li><a href="../pages/koda.html">Anxiety</a></li>
+            <li><a href="../pages/kenai.html">Diet</a></li>
+            <li><a href="../pages/nevada.html">Puppy Care</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Puppy Care</h2>
+        </section>
+        <div>
+            <button id="cornerbtn" class="return-to-top" title="Return to Top" onclick="topFunction()"><img src="images/back-to-top-icon-png-7.jpg" alt="return to top icon"></button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyrightyear"></span> Kiara Brache Productions</p>
+        <p><img src="../images/paw_icon.png"></p>
+    </footer>
 </body>
+
 </html>
+
+
+<script src="../js/scripts.js"></script>

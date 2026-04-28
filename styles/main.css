@@ -72,8 +72,10 @@ main aside {
     width: 25%;
 }
 main img {
-    padding-bottom: 1em;
+    margin-bottom: 1em;
     max-width: 150px;
+    border-radius: 10px;
+    border: 2px solid tan;
 }
 
 main p {
@@ -97,25 +99,27 @@ main p {
     color: rgb(114, 85, 47);
 }
 
-.return-to-top {
-    display: none;
+#cornerBtn {
     position: fixed;
-    left: 75px;
-    bottom: 75px;
-    z-index: 9999;
+    bottom: 20px;
+    right: 20px;  
+    background-color: rgb(253, 237, 217, 0.5);
+    border: 2px solid rgb(90, 67, 38);
+    border-radius: 10px;
+    color: rgb(90, 67, 38);
+    padding: 5px 3px;
+}
+
+#cornerBtn:hover {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;  
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgb(209, 164, 106);
+    border-radius: 10px;
+    color: rgb(209, 164, 106);
+    padding: 5px 3px;
     cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, .5);
-    transition: all ease-in-out 300ms;
-}
-
-.return-to-top img {
-    max-width: 50px;
-}
-
-.return-to-top:hover {
-    background-color: rgb(253, 237, 217);
 }
 
 footer {

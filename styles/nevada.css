@@ -63,25 +63,102 @@ main {
     display: flex;
 }
 
-.return-to-top {
+section {
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+}
+
+section .imagecarousel {
+    position: relative;
+    /* max-width: 100px; */
+}
+
+section .image {
     display: none;
-    position: fixed;
-    left: 75px;
-    bottom: 75px;
-    z-index: 9999;
+}
+
+section .image:first-of-type {
+    display: block;
+}
+
+section .image img {
+    border-radius: 10px;
+    max-width: 100px;
+}
+
+section .prev, .next {
+    position: absolute;
+    top: 50%;
+    font-size: 200%;
+    color: blue;
+    transform: translateY(-50%);
+    border-radius: 50vh;
+    transition: all ease-in-out 300ms ;
+}
+section .prev {
+    left: 15px;
+}
+section .next {
+    right: 15px;
+}
+
+section .prev:hover, .next:hover {
+    color: gold;
+    background-color: black;
     cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, .5);
-    transition: all ease-in-out 300ms;
 }
 
-.return-to-top img {
-    max-width: 50px;
+section .dots {
+    display: flex;
+    gap: 12px;
+    margin-top: 9px;
+    justify-content: center;
 }
 
-.return-to-top:hover {
-    background-color: rgb(253, 237, 217);
+section .dot {
+    height: 2px;
+    background-color: silver;
+    padding: 6px;
+    border-radius: 50vh;
+    cursor: pointer;
+}
+
+.active {
+    background-color: gold;
+}
+
+.fadeout {
+    animation: fade 2000ms;
+}
+
+@keyframes fade {
+    from {opacity: .2}
+    to {opacity: 1}
+}
+
+
+#cornerBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;  
+    background-color: rgb(253, 237, 217, 0.5);
+    border: 2px solid rgb(90, 67, 38);
+    border-radius: 10px;
+    color: rgb(90, 67, 38);
+    padding: 5px 3px;
+}
+
+#cornerBtn:hover {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;  
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgb(209, 164, 106);
+    border-radius: 10px;
+    color: rgb(209, 164, 106);
+    padding: 5px 3px;
+    cursor: pointer;
 }
 
 footer {

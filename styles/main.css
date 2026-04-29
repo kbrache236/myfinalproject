@@ -27,8 +27,17 @@ header {
     border-bottom: 3px solid tan;
     padding: .5em;
 }
-header img{
+
+header img {
     max-width: 150px;
+}
+
+header h2 {
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 300%;
+    margin-bottom: 3px;
 }
 
 
@@ -37,13 +46,16 @@ header img{
     border-bottom: 3px solid tan;
     background-color: tan;
 }
-    #nav_menu ul {
+
+#nav_menu ul {
     list-style: none;
     display: flex;
 }
+
 #nav_menu li {
     width: 20%;
 }
+
 #nav_menu a {
     text-align: center;
     display: block;
@@ -53,6 +65,7 @@ header img{
     text-decoration: none;
     color: white;
 }
+
 #nav_menu a:hover {
     color: black;
     background-color: rgb(253, 237, 217);
@@ -62,15 +75,19 @@ main {
     padding-left: 1em;
     padding-right: 1em;
     display: flex;
+    color: rgb(90, 67, 38);
 }
+
 main section {
     width: 75%;
     padding: 2em;
     line-height: 1.5;
 }
+
 main aside {
     width: 25%;
 }
+
 main img {
     margin-bottom: 1em;
     max-width: 150px;
@@ -80,21 +97,26 @@ main img {
 
 main p {
     padding-bottom: .5em;
+    text-indent: 2em;
 }
 
-#aside_right, #aside_right p {
+#aside_right,
+#aside_right p {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 1em;
 }
+
 #aside_right a:hover {
     color: tan;
 }
+
 #aside_right a:visited:hover {
     color: tan;
 }
+
 #aside_right a:visited {
     color: rgb(114, 85, 47);
 }
@@ -102,7 +124,7 @@ main p {
 #cornerBtn {
     position: fixed;
     bottom: 20px;
-    right: 20px;  
+    right: 20px;
     background-color: rgb(253, 237, 217, 0.5);
     border: 2px solid rgb(90, 67, 38);
     border-radius: 10px;
@@ -113,7 +135,7 @@ main p {
 #cornerBtn:hover {
     position: fixed;
     bottom: 20px;
-    right: 20px;  
+    right: 20px;
     background-color: rgba(255, 255, 255, 0.5);
     border: 2px solid rgb(209, 164, 106);
     border-radius: 10px;
@@ -129,6 +151,7 @@ footer {
     align-items: center;
     padding: 1em;
 }
+
 footer img {
     max-width: 50px;
 }

@@ -15,8 +15,11 @@
         });
     </script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/slicknav.css">
-    <link rel="stylesheet" href="../styles/kenai.css">
+    <link rel="stylesheet" href="../styles/nevada.css">
 
     <title>Puppy Care</title>
 </head>
@@ -26,7 +29,7 @@
         <img src="../images/paw_icon.png" alt="Paw">
         <div>
             <h2>The Brache Dogs</h2>
-            <h3>Under Construction</h3>
+            <h3>Puppy Love</h3>
         </div>
     </header>
 
@@ -44,26 +47,66 @@
     <main>
         <section>
             <h2>Puppy Care</h2>
+
             <div class="imagecarousel">
-                <div class="image fadeout"><img src="../images/puppy_nevi.jpeg" alt=""></div>
-                <div class="image fadeout"><img src="../images/nevi_exploring.jpeg" alt=""></div>
-                <div class="image fadeout"><img src="../images/nevi_hiding.jpeg" alt=""></div>
-                <div class="image fadeout"><img src="../images/nevi_nap.jpeg" alt=""></div>
-                <div class="image fadeout"><img src="../images/nevi_nap2.jpeg" alt=""></div>
-                <div class="image fadeout"><img src="../images/nevi_playing.jpeg" alt=""></div>
-                <div class="prev"><i class="fa-solid fa-chevron-left" onclick="showImage(-1)"></i></div>
-                <div class="next"><i class="fa-solid fa-chevron-right" onclick="showImage(1)"></i></div>
+
+                <div class="image fadeout">
+                    <img src="../images/puppy_nevi.jpeg" alt="">
+                </div>
+                <div class="image fadeout">
+                    <img src="../images/nevi_exploring.jpeg" alt="">
+                </div>
+                <div class="image fadeout">
+                    <img src="../images/nevi_hiding.jpeg" alt="">
+                </div>
+                <div class="image fadeout">
+                    <img src="../images/nevi_nap.jpeg" alt="">
+                </div>
+                <div class="image fadeout">
+                    <img src="../images/nevi_nap2.jpeg" alt="">
+                </div>
+                <div class="image fadeout">
+                    <img src="../images/nevi_playing.jpeg" alt="">
+                </div>
+
+                <div class="prev" onclick="showImage(-1)">&#10094;</div>
+                <div class="next" onclick="showImage(1)">&#10095;</div>
             </div>
-            </div>
+
             <div class="dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+                <span class="dot active" onclick="showImage(0, true)"></span>
+                <span class="dot" onclick="showImage(1, true)"></span>
+                <span class="dot" onclick="showImage(2, true)"></span>
+                <span class="dot" onclick="showImage(3, true)"></span>
+                <span class="dot" onclick="showImage(4, true)"></span>
+                <span class="dot" onclick="showImage(5, true)"></span>
             </div>
         </section>
+        <div id="info">
+            <p>Caring for a puppy requires a thoughtful balance of structure, patience, and attentiveness during a
+                critical stage of development. In the early weeks, puppies rely heavily on consistency to feel secure in
+                their new environment. Establishing routines for feeding, sleeping, and bathroom breaks helps them adapt
+                more quickly and reduces stress. Providing a safe, designated space—such as a crate or play area—can
+                also support both house training and a sense of security. Because puppies are naturally curious, it is
+                important to puppy-proof the home by removing hazards and ensuring they can explore safely.</p>
+            <p>Proper nutrition is another essential component of puppy care. Puppies require a diet specifically
+                formulated to support growth, including the right balance of protein, fats, vitamins, and minerals.
+                Feeding schedules should be consistent, typically involving multiple small meals throughout the day
+                rather than one large portion. Access to clean, fresh water at all times is equally important.
+                Monitoring a puppy’s weight and overall condition helps ensure they are developing at a healthy rate and
+                can alert owners to potential issues early.</p>
+            <p>Socialization and training play a crucial role in shaping a puppy’s behavior and temperament. Early
+                exposure to different people, environments, and other animals helps reduce fear and anxiety later in
+                life. Positive reinforcement techniques—such as rewarding good behavior with treats or praise—are highly
+                effective for teaching basic commands and encouraging desired habits. Training should be approached with
+                patience and consistency, as puppies are still learning how to interpret and respond to their
+                surroundings.</p>
+            <p>Regular veterinary care is vital to maintaining a puppy’s health. This includes vaccinations, parasite
+                prevention, and routine check-ups to monitor growth and development. Grooming should also begin early,
+                even for breeds that require minimal maintenance, so the puppy becomes comfortable with brushing,
+                bathing, and handling. By combining proper healthcare, nutrition, training, and a stable environment,
+                owners can support their puppy’s transition into a healthy, well-adjusted adult dog.</p>
+        </div>
     </main>
     <div>
         <button onclick="topFunction()" id="cornerBtn" title="Go to top">Return To Top</button>

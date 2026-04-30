@@ -158,8 +158,6 @@ footer img {
 
 #mobile_menu {
     display: none;
-    background-color: tan;
-    color: white;
 }
 
 @media (max-width: 767px) {

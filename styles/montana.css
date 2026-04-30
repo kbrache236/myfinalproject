@@ -149,6 +149,10 @@ footer img {
     max-width: 50px;
 }
 
+#mobile_menu {
+    display: none;
+}
+
 @media (max-width: 767px) {
     #nav_menu {
         display: none;

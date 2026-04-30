@@ -155,3 +155,38 @@ footer {
 footer img {
     max-width: 50px;
 }
+
+#mobile_menu {
+    display: none;
+    background-color: tan;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    #nav_menu {
+        display: none;
+    }
+
+    #mobile_menu {
+        display: block;
+        border-bottom: 2px solid tan;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    section {
+        max-width: 100%;
+    }
+}
